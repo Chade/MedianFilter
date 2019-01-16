@@ -34,6 +34,11 @@ int MedianFilter::get()
   return sorted[byte(filtersize / 2)];
 }
 
+byte MedianFilter::size()
+{
+  return filtersize;
+}
+
 void MedianFilter::sort(int array[], byte from, byte upTo)
 {
   byte swaps;  
